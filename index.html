@@ -4,24 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
     <title>Criando Site </title>
 </head>
+    <div class="container rounded-5">
 <body>
-    <main class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GIT E GITHUB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Repositórios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/lahecyn/Escola">Repositório do Lahecyo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://github.com/RobsonPiresCAFLO">Repositório do Robson</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>  
+    <main class="container rounded-5">
+        <h1 class="fw-bold titulo">Usando Git e Github para versionamento de projetos.</h1>
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6">
+                <h1 class="fw-bold git" >O que é GIT?</h1>
+                <p>O Git é um sistema de controle de versão distribuído criado para rastrear alterações em códigos-fonte e arquivos de projetos.</p>
+                </div>  
+                <div class="col-lg-4 col-md-6">
+                <img src="logogit-removebg-preview.png" class="img-fluid w-50">
+                </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-6">
+                <h1 class="fw-bold github">O que é GitHub?</h1>
+                <p>O GitHub é uma plataforma online baseada na nuvem que serve para hospedar repositórios Git, permitindo o compartilhamento de código e a colaboração entre equipes.</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="logogithub-removebg-preview.png" class="img-fluid w-75">
+            </div>
+        </div>
         <div class="row">
             <div class="col">
-                <h1>O que é GIT?</h1>
-                <p>Colocar um parágrafo explicando o que é git</p>
+                <h1 class="fw-bold">Qual a diferença entre Git e GitHub?</h1>
+                <p>Git: É a ferramenta de software instalada no seu computador que gerencia e registra o histórico das versões do código localmente.GitHub: É o serviço web (nuvem) que armazena cópias desses repositórios e adiciona ferramentas visuais e sociais para trabalho em grupo.</p>
 
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h1>Mais uma linha adicionada ao proejeto de site.</h1>
+                <h1 class="fw-bold">O que é um repositório?</h1>
+                <p>Um repositório (ou repo) é a pasta de um projeto que contém todos os arquivos e o histórico completo de revisões e alterações monitoradas pelo Git.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold">O que é um commit?</h1>
+                <p>Um commit é um registro definitivo (um "retrato" ou snapshot) do estado dos arquivos do projeto em um determinado momento.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold">O que é um clone (git clone)?</h1>
+                <p>O git clone é o comando usado para copiar um repositório remoto existente (com todo o seu histórico de commits) para o seu computador local.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold">Quais as vantagens de utilizar controle de versões em projetos de software?</h1>
+                <p>Histórico completo: Permite voltar a versões anteriores (rollback) caso algo dê errado.Trabalho em equipe: Facilita a colaboração simultânea de várias pessoas sem sobrescrever o trabalho dos outros.Rastreabilidade: Identifica exatamente quem fez cada alteração e quando ela ocorreu.Segurança e redundância: Cada cópia local do projeto possui todo o histórico do sistema.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold">Pesquise e comente sobre git add e git ignore.</h1>
+                <p>git add: É o comando que move os arquivos modificados na sua pasta de trabalho (working directory) para a área de preparação (staging area), indicando ao Git quais alterações devem ser incluídas no próximo commit.</p>
+                <p>git ignore: É o arquivo que contém uma lista de arquivos e diretórios que o Git deve ignorar ao rastrear mudanças em um repositório.</p>
             </div>
         </div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+</div>
 </html>
